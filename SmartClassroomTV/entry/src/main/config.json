@@ -1,0 +1,93 @@
+{
+  "app": {
+    "bundleName": "com.chinasofti.smartclassroomtv",
+    "vendor": "chinasofti",
+    "version": {
+      "code": 1000000,
+      "name": "1.0"
+    },
+    "apiVersion": {
+      "compatible": 4,
+      "target": 5,
+      "releaseType": "Release"
+    }
+  },
+  "deviceConfig": {
+    "default": {
+      "directLaunch": false,
+      "network": {
+        "cleartextTraffic": true
+
+      }
+    }
+  },
+  "module": {
+    "package": "com.chinasofti.smartclassroomtv",
+    "name": ".SmartClassroomTV",
+    "reqCapabilities": [
+      "video_support"
+    ],
+    "deviceType": [
+      "tv"
+    ],
+    "distro": {
+      "deliveryWithInstall": true,
+      "moduleName": "entry",
+      "moduleType": "entry"
+    },
+    "reqPermissions": [
+      {
+        "name": "ohos.permission.INTERNET"
+      }
+    ],
+    "metaData": {
+      "customizeData": [
+        {
+          "name": "hwc-theme",
+          "value": "androidhwext:style/Theme.Emui.NoActionBar",
+          "extra": ""
+        }
+      ]
+    },
+    "abilities": [
+      {
+        "skills": [
+          {
+            "entities": [
+              "entity.system.home"
+            ],
+            "actions": [
+              "action.system.home"
+            ]
+          }
+        ],
+        "orientation": "landscape",
+
+        "name": "com.chinasofti.smartclassroomtv.MainAbility",
+        "icon": "$media:icon",
+        "description": "$string:mainability_description",
+        "type": "page",
+        "launchType": "standard"
+      },
+      {
+        "orientation": "landscape",
+
+        "name": "com.chinasofti.smartclassroomtv.ShowQuestionAbility",
+        "icon": "$media:icon",
+        "description": "$string:showquestionability_description",
+        "type": "page",
+        "launchType": "standard"
+      },
+      {
+        "orientation": "landscape",
+
+        "name": "com.chinasofti.smartclassroomtv.ReportAbility",
+        "icon": "$media:icon",
+        "description": "$string:reportability_description",
+
+        "type": "page",
+        "launchType": "standard"
+      }
+    ]
+  }
+}

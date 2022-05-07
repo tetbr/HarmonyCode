@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout xmlns:ohos="http://schemas.huawei.com/res/ohos"
+                   ohos:id="$+id:root_layout"
+                   ohos:width="match_parent"
+                   ohos:height="match_parent"
+                   ohos:margin="0"
+                   ohos:padding="0vp"
+                   ohos:background_element="#efefef"
+                   ohos:orientation="vertical">
+
+    <DependentLayout
+            ohos:width="match_parent"
+            ohos:height="match_content"
+            ohos:margin="0vp"
+            ohos:padding="5vp"
+            ohos:background_element="blue"
+            >
+
+        <Text
+                ohos:width="match_parent"
+                ohos:height="match_content"
+                ohos:align_parent_top="true"
+                ohos:text="智慧课堂-答题结果"
+                ohos:padding="5vp"
+                ohos:text_alignment="center"
+                ohos:text_size="50"
+                ohos:id="$+id:title"
+                ohos:text_color="white"/>
+
+        <Button
+                ohos:width="match_content"
+                ohos:height="match_content"
+                ohos:align_parent_top="true"
+                ohos:text="退出"
+                ohos:padding="5vp"
+                ohos:text_alignment="center"
+                ohos:background_element="blue"
+                ohos:id="$+id:btn_backup"
+                ohos:align_parent_left="true"
+                ohos:text_size="50"
+                ohos:text_color="white"/>
+
+        <Button
+                ohos:width="match_content"
+                ohos:height="match_content"
+                ohos:align_parent_top="true"
+                ohos:text="保存"
+                ohos:padding="5vp"
+                ohos:text_alignment="center"
+                ohos:align_parent_right="right "
+                ohos:background_element="blue"
+                ohos:id="$+id:btn_save"
+                ohos:text_size="50"
+                ohos:text_color="white"/>
+
+
+    </DependentLayout>
+
+    <DirectionalLayout
+        ohos:width="match_parent"
+        ohos:background_element="white"
+        ohos:layout_alignment="vertical_center"
+        ohos:margin="5vp"
+        ohos:orientation="vertical"
+        ohos:height="match_parent">
+
+
+        <DirectionalLayout
+            ohos:width="match_parent"
+            ohos:background_element="white"
+            ohos:layout_alignment="vertical_center"
+            ohos:margin="5vp"
+            ohos:orientation="horizontal"
+            ohos:weight="1"
+            ohos:height="match_parent">
+
+            <Text
+                ohos:width="match_parent"
+                ohos:weight="3"
+                ohos:height="match_parent"
+                ohos:text="题号："
+                ohos:text_alignment="right"
+                ohos:text_color="black"
+                ohos:text_size="70fp"
+                ohos:id="$+id:i_notice"/>
+
+            <Text
+                ohos:width="match_parent"
+                ohos:weight="2"
+                ohos:height="match_parent"
+                ohos:text="1"
+                ohos:text_alignment="left"
+                ohos:text_color="black"
+                ohos:text_size="70fp"
+                ohos:id="$+id:t_question_no"/>
+        </DirectionalLayout>
+
+        <DirectionalLayout
+            ohos:width="match_parent"
+            ohos:background_element="white"
+            ohos:layout_alignment="vertical_center"
+            ohos:margin="5vp"
+            ohos:orientation="horizontal"
+            ohos:weight="1"
+            ohos:height="match_parent">
+
+            <Text
+                ohos:width="match_parent"
+                ohos:weight="3"
+                ohos:height="match_parent"
+                ohos:text="答题人数："
+                ohos:text_alignment="right"
+                ohos:text_color="black"
+                ohos:text_size="70fp"
+
+                />
+
+            <Text
+                ohos:width="match_parent"
+                ohos:weight="2"
+                ohos:height="match_parent"
+                ohos:text="30"
+                ohos:text_alignment="left"
+                ohos:text_color="black"
+                ohos:text_size="70fp"
+                ohos:id="$+id:t_answer_sum"/>
+        </DirectionalLayout>
+
+        <DirectionalLayout
+            ohos:width="match_parent"
+            ohos:background_element="white"
+            ohos:layout_alignment="vertical_center"
+            ohos:margin="5vp"
+            ohos:orientation="horizontal"
+            ohos:weight="1"
+            ohos:height="match_parent">
+
+            <Text
+                ohos:width="match_parent"
+                ohos:weight="3"
+                ohos:height="match_parent"
+                ohos:text="正确人数："
+                ohos:text_alignment="right"
+                ohos:text_color="black"
+                ohos:text_size="70fp"
+                />
+
+            <Text
+                ohos:width="match_parent"
+                ohos:weight="2"
+                ohos:height="match_parent"
+                ohos:text="10"
+                ohos:text_alignment="left"
+                ohos:text_color="green"
+                ohos:text_size="70fp"
+                ohos:id="$+id:t_correct_sum"/>
+        </DirectionalLayout>
+
+        <DirectionalLayout
+            ohos:width="match_parent"
+            ohos:background_element="white"
+            ohos:layout_alignment="vertical_center"
+            ohos:margin="5vp"
+            ohos:orientation="horizontal"
+            ohos:weight="1"
+            ohos:height="match_parent">
+
+            <Text
+                ohos:width="match_parent"
+                ohos:weight="3"
+                ohos:height="match_parent"
+                ohos:text="正确率："
+                ohos:text_alignment="right"
+                ohos:text_color="black"
+                ohos:text_size="70fp"
+                />
+
+            <Text
+                ohos:width="match_parent"
+                ohos:weight="2"
+                ohos:height="match_parent"
+                ohos:text="39%"
+                ohos:text_alignment="left"
+                ohos:text_color="green"
+                ohos:text_size="70fp"
+                ohos:id="$+id:t_accuracy"/>
+        </DirectionalLayout>
+    </DirectionalLayout>
+</DirectionalLayout>

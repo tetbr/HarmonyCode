@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+        xmlns:ohos="http://schemas.huawei.com/res/ohos"
+        ohos:width="match_parent"
+        ohos:height="match_parent"
+        ohos:orientation="vertical"
+        ohos:background_element="#efefef">
+
+    <Text
+            ohos:id="$+id:title"
+            ohos:width="match_parent"
+            ohos:height="match_parent"
+            ohos:text_size="19fp"
+            ohos:text="00:00"
+            ohos:top_padding="8vp"
+            ohos:bottom_padding="8vp"
+            ohos:right_padding="60vp"
+            ohos:left_padding="60vp"
+            ohos:text_color="white"
+            ohos:text_alignment="center"
+            ohos:background_element="blue"
+            ohos:weight="1"
+/>
+    <Text
+            ohos:id="$+id:t_content"
+            ohos:width="match_parent"
+            ohos:height="match_parent"
+            ohos:text_size="16fp"
+
+            ohos:margin="5vp"
+            ohos:right_padding="20vp"
+            ohos:left_padding="20vp"
+            ohos:text_color="black"
+            ohos:background_element="white"
+
+            ohos:text_alignment="center"
+            ohos:weight="1"/>
+    <DependentLayout
+            ohos:width="match_parent"
+            ohos:height="match_parent"
+
+            ohos:margin="5vp"
+            ohos:weight="3"
+            >
+        <ListContainer
+                ohos:id="$+id:list_container"
+                ohos:width="match_parent"
+                ohos:height="match_parent"
+                ohos:orientation="vertical"
+                ohos:margin="5vp"
+
+                />
+        <DirectionalLayout
+                ohos:width="match_parent"
+                ohos:background_element="#440E0E0E"
+                ohos:id="$+id:dl_result"
+                ohos:padding="15vp"
+                ohos:orientation="vertical"
+                ohos:height="match_parent">
+
+
+            <DirectionalLayout
+                    ohos:width="match_parent"
+                    ohos:background_element="white"
+                    ohos:layout_alignment="horizontal_center"
+                    ohos:margin="5vp"
+
+                    ohos:orientation="horizontal"
+                    ohos:height="match_content">
+
+                <Text
+                        ohos:width="match_parent"
+                        ohos:weight="2"
+                        ohos:height="match_parent"
+
+                        ohos:text="正确答案："
+                        ohos:text_alignment="right"
+                        ohos:text_color="black"
+                        ohos:text_size="20fp"
+                        />
+
+                <Text
+                        ohos:width="match_parent"
+                        ohos:weight="1"
+                        ohos:height="match_parent"
+                        ohos:text="B"
+                        ohos:text_alignment="left"
+                        ohos:text_color="green"
+                        ohos:text_size="20fp"
+                        ohos:id="$+id:t_corrct_answer"/>
+            </DirectionalLayout>
+
+            <DirectionalLayout
+                    ohos:width="match_parent"
+                    ohos:background_element="white"
+                    ohos:layout_alignment="horizontal_center"
+                    ohos:margin="5vp"
+                    ohos:orientation="horizontal"
+                    ohos:height="match_content">
+
+                <Text
+                        ohos:width="match_parent"
+                        ohos:weight="2"
+                        ohos:height="match_parent"
+                        ohos:text="我的答题："
+                        ohos:text_alignment="right"
+                        ohos:text_color="black"
+                        ohos:text_size="20fp"
+
+                        />
+
+                <Text
+                        ohos:width="match_parent"
+                        ohos:weight="1"
+                        ohos:height="match_parent"
+                        ohos:text="A"
+                        ohos:text_alignment="left"
+                        ohos:text_color="black"
+                        ohos:text_size="20fp"
+                        ohos:id="$+id:t_my_answer"/>
+            </DirectionalLayout>
+
+
+        </DirectionalLayout>
+    </DependentLayout>
+
+    <Button
+            ohos:id="$+id:button"
+            ohos:width="match_parent"
+            ohos:height="match_parent"
+            ohos:weight="1"
+            ohos:text_size="19fp"
+            ohos:text="提交"
+            ohos:top_padding="8vp"
+            ohos:bottom_padding="8vp"
+            ohos:right_padding="80vp"
+            ohos:left_padding="80vp"
+            ohos:text_color="white"
+            ohos:text_alignment="center"
+            ohos:background_element="blue"
+/>
+
+</DirectionalLayout>

@@ -1,0 +1,59 @@
+{
+  "app": {
+    "bundleName": "com.chinasofti.smartclassroomdemo1",
+    "vendor": "chinasofti",
+    "version": {
+      "code": 1000000,
+      "name": "1.0"
+    },
+    "apiVersion": {
+      "compatible": 4,
+      "target": 5,
+      "releaseType": "Release"
+    }
+  },
+  "deviceConfig": {
+
+  },
+  "module": {
+    "package": "com.chinasofti.smartclassroomdemo1",
+    "name": ".SmartClassroomDemo1",
+    "reqCapabilities": [
+      "video_support"
+    ],
+    "deviceType": [
+      "wearable"
+    ],
+    "distro": {
+      "deliveryWithInstall": true,
+      "moduleName": "entry",
+      "moduleType": "entry"
+    },
+    "reqPermissions": [
+      {
+        "name": "ohos.permission.INTERNET"
+      }
+    ],
+    "abilities": [
+      {
+        "skills": [
+          {
+            "entities": [
+              "entity.system.home"
+            ],
+            "actions": [
+              "action.system.home"
+            ]
+          }
+        ],
+        "orientation": "landscape",
+        "name": "com.chinasofti.smartclassroomdemo1.MainAbility",
+        "icon": "$media:icon",
+        "description": "$string:mainability_description",
+
+        "type": "page",
+        "launchType": "standard"
+      }
+    ]
+  }
+}
